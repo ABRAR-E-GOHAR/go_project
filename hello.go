@@ -93,7 +93,7 @@ func makeArrayOfObjects(client *redis.Client) []sampleData {
 func tickFunction(conn net.Conn, generatedArray []sampleData) {
 
 	for range time.Tick(time.Second * 1) {
-		conn.Write([]byte("\n1"))
+		conn.Write([]byte("\nPlease see your console"))
 	}
 }
 
